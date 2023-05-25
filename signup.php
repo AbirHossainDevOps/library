@@ -142,7 +142,7 @@ error:function (){}
 </div>
  <div class="form-group">
 <label>Verification code : </label>
-<input type="text"  name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php">
+<input type="text"  name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php">&nbsp; <?php echo $_SESSION["vercode"]?>
 </div>                                
 <button type="submit" name="signup" class="btn btn-danger" id="submit">Register Now </button>
 
