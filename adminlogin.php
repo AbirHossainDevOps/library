@@ -81,7 +81,7 @@ echo "<script>alert('Invalid Details');</script>";
 </div>
  <div class="form-group">
 <label>Verification code : </label>
-<input type="text"  name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php">&nbsp; <?php echo $_SESSION["vercode"]?>
+<input type="text"  name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp; <?php echo $_SESSION["vercode"]?>
  </div>  
 
  <button type="submit" name="login" class="btn btn-info">LOGIN </button>
