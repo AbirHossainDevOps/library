@@ -97,7 +97,7 @@ echo "<script>alert('Invalid Details');</script>";
 </div>
 
  <div class="form-group">
-<label>Verification code : </label>
+<label>Add Verification code : </label>
 <input type="text" class="form-control1"  name="vercode" maxlength="5" autocomplete="off" required  style="height:25px;" />&nbsp;<img src="captcha.php">&nbsp; <?php echo $_SESSION["vercode"]?>
  </div> 
 
