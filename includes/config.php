@@ -1,6 +1,6 @@
 <?php 
 // DB credentials.
-define('DB_HOST','192.168.20.124');
+define('DB_HOST','abir-db.czk1aergjpmh.eu-west-2.rds.amazonaws.com');
 define('DB_USER','librarian');
 define('DB_PASS','librarypass');
 define('DB_NAME','library');
