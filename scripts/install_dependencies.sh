@@ -11,6 +11,6 @@ CODEDEPLOY_BIN="/opt/codedeploy-agent/bin/codedeploy-agent"
 $CODEDEPLOY_BIN stop
 yum erase codedeploy-agent -y
 cd /home/ec2-user
-wget https://aws-codedeploy-eu-west-3.s3.eu-west-3.amazonaws.com/latest/install
+wget https://aws-codedeploy-eu-west-2.s3.eu-west-2.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
