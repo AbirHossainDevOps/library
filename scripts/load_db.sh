@@ -1,1 +1,1 @@
-mysql -h fazle-db.c5tsce7xtv8b.eu-west-3.rds.amazonaws.com -u root --password="bjit1234" moviebook < /tmp/moviebook.sql 
+mysql -h abir-db.czk1aergjpmh.eu-west-2.rds.amazonaws.com -u librarian --password="librarypass" library < /tmp/moviebook.sql 
