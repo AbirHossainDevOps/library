@@ -1,6 +1,6 @@
 USE library;
 
-CREATE TABLE `admin` (
+CREATE TABLE IF NOT EXISTS  `admin` (
   `id` int(11) NOT NULL,
   `FullName` varchar(100) DEFAULT NULL,
   `AdminEmail` varchar(120) DEFAULT NULL,
@@ -10,14 +10,14 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-CREATE TABLE `tblauthors` (
+CREATE TABLE IF NOT EXISTS  `tblauthors` (
   `id` int(11) NOT NULL,
   `AuthorName` varchar(159) DEFAULT NULL,
   `creationDate` timestamp NULL DEFAULT current_timestamp(),
   `UpdationDate` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE `tblbooks` (
+CREATE TABLE IF NOT EXISTS  `tblbooks` (
   `id` int(11) NOT NULL,
   `BookName` varchar(255) DEFAULT NULL,
   `CatId` int(11) DEFAULT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE `tblbooks` (
   `UpdationDate` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE `tblcategory` (
+CREATE TABLE IF NOT EXISTS  `tblcategory` (
   `id` int(11) NOT NULL,
   `CategoryName` varchar(150) DEFAULT NULL,
   `Status` int(1) DEFAULT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE `tblcategory` (
   `UpdationDate` timestamp NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE `tblissuedbookdetails` (
+CREATE TABLE IF NOT EXISTS  `tblissuedbookdetails` (
   `id` int(11) NOT NULL,
   `BookId` int(11) DEFAULT NULL,
   `StudentID` varchar(150) DEFAULT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE `tblissuedbookdetails` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-CREATE TABLE `tblstudents` (
+CREATE TABLE IF NOT EXISTS  `tblstudents` (
   `id` int(11) NOT NULL,
   `StudentId` varchar(100) DEFAULT NULL,
   `FullName` varchar(120) DEFAULT NULL,
