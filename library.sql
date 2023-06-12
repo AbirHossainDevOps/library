@@ -1,5 +1,6 @@
 USE library;
 
+DROP TABLE IF EXISTS `admin` ;
 CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
   `FullName` varchar(100) DEFAULT NULL,
@@ -22,6 +23,7 @@ INSERT INTO `admin` (`id`, `FullName`, `AdminEmail`, `UserName`, `Password`, `up
 -- Table structure for table `tblauthors`
 --
 
+DROP TABLE IF EXISTS `tblauthors` ;
 CREATE TABLE `tblauthors` (
   `id` int(11) NOT NULL,
   `AuthorName` varchar(159) DEFAULT NULL,
@@ -47,6 +49,7 @@ INSERT INTO `tblauthors` (`id`, `AuthorName`, `creationDate`, `UpdationDate`) VA
 -- Table structure for table `tblbooks`
 --
 
+DROP TABLE IF EXISTS `tblbooks` ;
 CREATE TABLE `tblbooks` (
   `id` int(11) NOT NULL,
   `BookName` varchar(255) DEFAULT NULL,
@@ -72,6 +75,7 @@ INSERT INTO `tblbooks` (`id`, `BookName`, `CatId`, `AuthorId`, `ISBNNumber`, `Bo
 -- Table structure for table `tblcategory`
 --
 
+DROP TABLE IF EXISTS `tblcategory` ;
 CREATE TABLE `tblcategory` (
   `id` int(11) NOT NULL,
   `CategoryName` varchar(150) DEFAULT NULL,
@@ -96,6 +100,7 @@ INSERT INTO `tblcategory` (`id`, `CategoryName`, `Status`, `CreationDate`, `Upda
 -- Table structure for table `tblissuedbookdetails`
 --
 
+DROP TABLE IF EXISTS `tblissuedbookdetails` ;
 CREATE TABLE `tblissuedbookdetails` (
   `id` int(11) NOT NULL,
   `BookId` int(11) DEFAULT NULL,
@@ -124,6 +129,7 @@ INSERT INTO `tblissuedbookdetails` (`id`, `BookId`, `StudentID`, `IssuesDate`, `
 -- Table structure for table `tblstudents`
 --
 
+DROP TABLE IF EXISTS `tblstudents` ;
 CREATE TABLE `tblstudents` (
   `id` int(11) NOT NULL,
   `StudentId` varchar(100) DEFAULT NULL,
